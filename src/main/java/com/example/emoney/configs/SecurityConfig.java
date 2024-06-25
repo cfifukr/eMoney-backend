@@ -35,7 +35,7 @@
             return http
                     .csrf(AbstractHttpConfigurer::disable)
                     .authorizeHttpRequests(
-                            req->req.requestMatchers("api/v1/login/**","api/v1/signup/**")
+                            req->req.requestMatchers("api/v1/login/**","api/v1/signup/**", "api/v1/test/**")
                                     .permitAll()
                                     .requestMatchers("api/v1/admin/**").hasAuthority("ROLE_ADMIN")
                                     .anyRequest()
