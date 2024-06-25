@@ -17,7 +17,7 @@ public class BlogService {
     private final BlogRepository blogRepository;
 
     @Transactional
-    public Blog saveOrUpdateBlog(Blog blog){
+    public synchronized Blog saveOrUpdateBlog(Blog blog){
         return blogRepository.save(blog);
     }
 

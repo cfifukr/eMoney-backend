@@ -64,7 +64,7 @@ public class UserService{
     };
 
     @Transactional
-    public User registration(RegistrationDto registrationDto){
+    public synchronized User registration(RegistrationDto registrationDto){
 
         String hashPassword =Hash.toStringHash256(registrationDto.getPassword());
 

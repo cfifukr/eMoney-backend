@@ -18,11 +18,11 @@ public class WalletService {
 
 
     @Transactional
-    public void deleteWallet(Wallet wallet){
+    public  synchronized void deleteWallet(Wallet wallet){
         walletRepository.delete(wallet);
     }
     @Transactional
-    public Wallet saveWallet(Wallet wallet){
+    public synchronized Wallet saveWallet(Wallet wallet){
         return walletRepository.save(wallet);
     }
 

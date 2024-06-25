@@ -19,7 +19,7 @@ public class RoleService {
     @Autowired
     private  RoleRepository roleRepository;
 
-    public Role addRoles(Role role){
+    public synchronized Role addRoles(Role role){
         if(findByName(role.getName()) == null){
             return roleRepository.save(role);
         }

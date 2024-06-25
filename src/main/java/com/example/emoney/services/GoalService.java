@@ -24,7 +24,7 @@ public class GoalService {
     }
 
     @Transactional
-    public Goal saveGoal(Goal goal){
+    public synchronized Goal saveGoal(Goal goal){
         return goalRepository.save(goal);
     }
 
@@ -44,12 +44,12 @@ public class GoalService {
     }
 
     @Transactional
-    public void deleteGoal(Goal goal){
+    public synchronized void deleteGoal(Goal goal){
         goalRepository.delete(goal);
     }
 
     @Transactional
-    public void deleteGoal(Long id){
+    public  synchronized void deleteGoal(Long id){
         goalRepository.deleteById(id);
     }
 
@@ -59,7 +59,7 @@ public class GoalService {
     }
 
     @Transactional
-    public Goal comleteGoal(Long id) {
+    public synchronized Goal comleteGoal(Long id) {
         Goal goal = getGoalById(id);
         goal.setIsAccomplished(true);
         return saveGoal(goal);

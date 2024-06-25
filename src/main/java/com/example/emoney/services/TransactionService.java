@@ -43,7 +43,7 @@ public class TransactionService {
                 pageable);
     }
 
-    public Transaction saveTransaction(Transaction transaction){
+    public synchronized Transaction saveTransaction(Transaction transaction){
         return transactionRepository.save(transaction);
     }
 
@@ -70,7 +70,7 @@ public class TransactionService {
 
 
 
-    public Transaction createTransaction(CreateTransactionDto transDto){
+    public synchronized Transaction createTransaction(CreateTransactionDto transDto){
         Transaction transaction = new Transaction().builder()
                 .money(transDto.getMoney())
                 .operation(Operation.valueOf(transDto.getOperation().toUpperCase().strip()))

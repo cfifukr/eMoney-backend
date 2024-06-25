@@ -17,12 +17,12 @@ public class CommentService {
     private final CommentRepository commentRepository;
 
     @Transactional
-    public Comment saveOrUpdateComment(Comment comment){
+    public synchronized Comment saveOrUpdateComment(Comment comment){
         return commentRepository.save(comment);
     }
 
     @Transactional
-    public void deleteCommentById(ObjectId id){
+    public synchronized void deleteCommentById(ObjectId id){
         commentRepository.deleteById(id);
     }
 
