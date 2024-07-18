@@ -1,8 +1,8 @@
 package com.example.emoney.controllers;
 
-import com.example.emoney.dtos.UserReponseDto;
-import com.example.emoney.dtos.WalletDto;
-import com.example.emoney.dtos.WalletResponseDto;
+import com.example.emoney.dtos.response.UserReponseDto;
+import com.example.emoney.dtos.request.WalletDto;
+import com.example.emoney.dtos.response.WalletResponseDto;
 import com.example.emoney.enums.Currency;
 import com.example.emoney.exceptions.ExceptionDto;
 import com.example.emoney.models.User;

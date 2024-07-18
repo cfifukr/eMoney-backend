@@ -1,4 +1,4 @@
-package com.example.emoney.dtos;
+package com.example.emoney.dtos.response;
 
 import com.example.emoney.enums.Currency;
 import com.example.emoney.models.Wallet;
@@ -6,8 +6,6 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-import java.util.List;
 
 @AllArgsConstructor
 @NoArgsConstructor

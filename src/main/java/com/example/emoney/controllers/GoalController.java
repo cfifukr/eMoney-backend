@@ -1,10 +1,10 @@
 package com.example.emoney.controllers;
 
 
-import com.example.emoney.dtos.GoalDto;
+import com.example.emoney.dtos.request.GoalDto;
 import com.example.emoney.dtos.pageable.GoalPageDto;
 import com.example.emoney.dtos.response.GoalResponseDto;
-import com.example.emoney.dtos.GoalUpdateDto;
+import com.example.emoney.dtos.update.GoalUpdateDto;
 import com.example.emoney.exceptions.ExceptionDto;
 import com.example.emoney.models.Goal;
 import com.example.emoney.models.User;

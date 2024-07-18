@@ -1,9 +1,8 @@
 package com.example.emoney.controllers;
 
-import com.example.emoney.dtos.RoleDto;
+import com.example.emoney.dtos.request.RoleDto;
 import com.example.emoney.models.Role;
 import com.example.emoney.services.RoleService;
-import org.apache.coyote.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

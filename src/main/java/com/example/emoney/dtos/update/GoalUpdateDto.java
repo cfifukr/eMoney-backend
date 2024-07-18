@@ -1,4 +1,4 @@
-package com.example.emoney.dtos;
+package com.example.emoney.dtos.update;
 
 import com.example.emoney.models.Goal;
 import lombok.Data;
@@ -30,6 +30,8 @@ public class GoalUpdateDto {
         if (this.moneyNeed != null) {
             goal.setMoneyNeed(this.moneyNeed);
         }
+
+        System.out.println(goal);
 
 
         return goal;

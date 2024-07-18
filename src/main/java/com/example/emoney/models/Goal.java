@@ -41,5 +41,15 @@ public class Goal {
         this.isAccomplished = false;
     }
 
-
+    @Override
+    public String toString() {
+        return "Goal{" +
+                "id=" + id +
+                ", goal='" + goal + '\'' +
+                ", moneyNeed=" + moneyNeed +
+                ", moneyHave=" + moneyHave +
+                ", isAccomplished=" + isAccomplished +
+                ", currency=" + currency +
+                '}';
+    }
 }

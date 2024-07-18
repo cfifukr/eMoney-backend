@@ -1,4 +1,4 @@
-package com.example.emoney.dtos;
+package com.example.emoney.dtos.request;
 
 
 import lombok.AllArgsConstructor;

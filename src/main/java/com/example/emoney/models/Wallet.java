@@ -1,6 +1,6 @@
 package com.example.emoney.models;
 
-import com.example.emoney.dtos.CreateTransactionDto;
+import com.example.emoney.dtos.request.CreateTransactionDto;
 import com.example.emoney.enums.Currency;
 
 import com.example.emoney.enums.Operation;

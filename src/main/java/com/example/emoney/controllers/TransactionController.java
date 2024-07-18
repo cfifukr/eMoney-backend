@@ -1,8 +1,8 @@
 package com.example.emoney.controllers;
 
 
-import com.example.emoney.dtos.TransactionDto;
-import com.example.emoney.dtos.TransactionResponseDto;
+import com.example.emoney.dtos.request.TransactionDto;
+import com.example.emoney.dtos.response.TransactionResponseDto;
 import com.example.emoney.enums.Operation;
 import com.example.emoney.exceptions.ExceptionDto;
 import com.example.emoney.models.Transaction;

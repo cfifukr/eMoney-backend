@@ -1,9 +1,9 @@
 package com.example.emoney.controllers;
 
 
-import com.example.emoney.dtos.AuthenticationResponseDto;
-import com.example.emoney.dtos.RegistrationDto;
-import com.example.emoney.dtos.UserReponseDto;
+import com.example.emoney.dtos.response.AuthenticationResponseDto;
+import com.example.emoney.dtos.request.RegistrationDto;
+import com.example.emoney.dtos.response.UserReponseDto;
 import com.example.emoney.exceptions.ExceptionDto;
 import com.example.emoney.models.User;
 import com.example.emoney.services.JwtService;
@@ -15,7 +15,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.security.Principal;
 import java.util.Map;
 
 @RestController

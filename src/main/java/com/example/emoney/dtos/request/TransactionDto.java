@@ -1,4 +1,4 @@
-package com.example.emoney.dtos;
+package com.example.emoney.dtos.request;
 
 import com.example.emoney.enums.Operation;
 import com.example.emoney.models.Transaction;

@@ -1,6 +1,6 @@
 package com.example.emoney.services;
 
-import com.example.emoney.dtos.RegistrationDto;
+import com.example.emoney.dtos.request.RegistrationDto;
 import com.example.emoney.enums.Currency;
 import com.example.emoney.models.User;
 import com.example.emoney.models.Wallet;

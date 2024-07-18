@@ -1,6 +1,6 @@
 package com.example.emoney.dtos.pageable;
 
-import com.example.emoney.dtos.TransactionResponseDto;
+import com.example.emoney.dtos.response.TransactionResponseDto;
 
 import java.util.List;
 

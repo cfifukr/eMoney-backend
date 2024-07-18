@@ -1,12 +1,11 @@
 package com.example.emoney.services;
 
-import com.example.emoney.dtos.CreateTransactionDto;
+import com.example.emoney.dtos.request.CreateTransactionDto;
 import com.example.emoney.enums.Operation;
 import com.example.emoney.models.Transaction;
 import com.example.emoney.models.Wallet;
 import com.example.emoney.repositories.TransactionRepository;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;

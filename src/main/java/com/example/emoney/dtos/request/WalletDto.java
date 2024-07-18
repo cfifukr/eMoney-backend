@@ -1,4 +1,5 @@
-package com.example.emoney.dtos;
+package com.example.emoney.dtos.request;
+
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,6 +8,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class RoleDto {
-    private String name;
+public class WalletDto {
+    String name;
+    String currency;
 }
